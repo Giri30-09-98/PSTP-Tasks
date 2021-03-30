@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E91E63"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="User Registartion Form"
+            android:textColor="#2196F3"
+            android:textSize="30sp" />
+
+        <EditTextm
+            android:id="@+id/gp_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="Enter The Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/gp_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="Enter The Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/gp_userMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="Enter The Mobile Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/gp_userpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="Enter The Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/gp_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="Enter The Address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Java" />
+
+            <CheckBox
+                android:id="@+id/python"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Python" />
+
+            <CheckBox
+                android:id="@+id/reacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Reacts" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/gp_result"
+            android:textSize="30sp"
+            android:text="result"
+            android:gravity="center"/>
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="40"
+            android:id="@+id/sb"
+            android:layout_margin="10dp"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textOff="OffState"
+            android:textOn="OnState" />
+
+        <ImageButton
+            android:id="@+id/ibm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="showData"
+            android:src="@drawable/ic_baseline_photo_camera_24" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lambo_car"/>
+    </LinearLayout>
+    </ScrollView>
+</layout>

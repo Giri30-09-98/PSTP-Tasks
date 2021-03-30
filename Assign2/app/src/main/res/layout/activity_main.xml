@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/giri_prasad_resume"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:autoLink="all"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:text="Myself Giri Prasad and I'm currently pursuing my engineering degree from Annamacharya Institute Of Technology And Sciences"/>
+<Button
+    android:text="Linkedin"
+    android:onClick="browser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/my_pic"/>
+    </LinearLayout>
+</ScrollView>

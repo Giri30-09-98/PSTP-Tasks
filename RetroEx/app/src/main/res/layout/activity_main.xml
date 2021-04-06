@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C19"
+        android:id="@+id/c19"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#FF5722"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/dt"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#E91E63"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:id="@+id/c"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#FF5722"
+        />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ActiveCases"
+    android:id="@+id/ac"
+    android:textSize="40sp"
+    android:gravity="center"
+    android:textColor="#CDDC39"
+    /> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Dead"
+    android:id="@+id/dd"
+    android:textSize="40sp"
+    android:gravity="center"
+    android:textColor="#2196F3"
+    /> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Recovered"
+    android:id="@+id/rc"
+    android:textSize="40sp"
+    android:gravity="center"
+    android:textColor="#4CAF50"
+    />
+
+</LinearLayout>

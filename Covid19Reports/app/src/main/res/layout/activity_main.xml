@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CovidReport"
+        android:id="@+id/cr"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#3F51B5"/>
+
+    <TextView
+
+    android:text="Date"
+    android:id="@+id/date"
+    style="@style/text_att"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textColor="#4CAF50"
+    />
+    <TextView
+        style="@style/text_att"
+        android:text="Country"
+        android:id="@+id/ct"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFC107"
+        />
+    <TextView
+        style="@style/text_att"
+        android:text="Confirmedcases"
+        android:id="@+id/cc"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FF9800"
+        />
+    <TextView
+        style="@style/text_att"
+        android:text="Active"
+        android:id="@+id/ac"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#009688"
+        />
+    <TextView
+        style="@style/text_att"
+        android:text="Recovered"
+        android:id="@+id/rc"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#2196F3"
+        />
+    <TextView
+        style="@style/text_att"
+        android:text="Deaths"
+        android:id="@+id/dc"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#CDDC39"
+        />
+</LinearLayout>

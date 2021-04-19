@@ -39,6 +39,19 @@ TextView C19,Country,Date,Recovered,Dead,ActiveCases;
         Recovered=findViewById(R.id.rc);
         Dead=findViewById(R.id.dd);
         ActiveCases=findViewById(R.id.ac);
+        ConnectivityManager cm=(ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo=cm.getActiveNetworkInfo();
+        if (networkInfo==null){
+            Toast.makeText(this, "No Internet", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder=new AlertDialog.Builder(this);
+            builder.setTitle("Alert..!");
+            builder.setMessage("Check Internet Connection");
+            builder.setIcon()
+                    builder.show();
+        }else{
+            dialog.show();
+        }
+
         EndInt ei= RetIns.getRetrofit().create(EndInt.class);
        Call<String> c=ei.getData();
         c.enqueue(new Callback<String>() {
@@ -62,7 +75,6 @@ TextView C19,Country,Date,Recovered,Dead,ActiveCases;
                     Recovered.setText("Recovered:"+resRecovered);
                     String resC19=rootobj.getString("C19");
                     C19.setText("C19:"+resC19);
-
 
                 } catch (JSONException e) {
                     e.printStackTrace();
